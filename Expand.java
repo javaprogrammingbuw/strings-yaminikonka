@@ -6,6 +6,10 @@ public class Expand {
 	
 	public static void main(String[] args) {
 		Scanner scan = new Scanner(System.in);
+          System.out.println("enter the your String: ");
+          String s=scan.nextLine();
+          expand(s);
+	}
 		
 		//todo: take as an input a combination of characters and numbers (e.g. 2a3b5c)
 		//expand the String by printing each letter so many times as the number before the letter indicates
@@ -14,7 +18,8 @@ public class Expand {
 		//to improve your code such that you can use values greater or equal 10, eg. 10a13b22c
 		//Further modification: if a character should only be printed one time you don't need to write any number infront of that character
 		//e.g. a3b12cd5e -> abbbccccccccccccdeeeee 
-		String string=scan.nextLine();
+		public static void expand(String string){
+		// String string=scan.nextLine();
             String store="0";
 		for(int i=0;i<string.length();i++){
 			char c=string.charAt(i);
@@ -36,5 +41,6 @@ public class Expand {
 		} 
 		
 	}
-	
 }
+	
+
